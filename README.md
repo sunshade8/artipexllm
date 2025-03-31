@@ -10,6 +10,75 @@
 - 할루시네이션(환각) 감지 및 처리
 - 한국어 질문 처리 최적화
 
+## 🚀 팀원을 위한 빠른 시작 가이드
+
+이 섹션에서는 저장소를 클론하고 시스템을 설정하는 방법을 단계별로 설명합니다.
+
+### 1. 저장소 클론하기
+
+```bash
+git clone https://github.com/yourusername/adaptive-rag-ko.git
+cd adaptive-rag-ko
+```
+
+### 2. 패키지 설치하기
+
+```bash
+pip install -e .
+```
+
+이 명령은 모든 필요한 의존성을 설치하고 개발 모드로 패키지를 설정합니다.
+
+### 3. API 키 설정하기
+
+`.env.example` 파일을 `.env`로 복사하고 API 키를 설정합니다:
+
+```bash
+cp .env.example .env
+```
+
+그런 다음 텍스트 에디터로 `.env` 파일을 열고 자신의 API 키를 입력합니다:
+
+```
+# API 키 설정
+OPENAI_API_KEY=your-actual-openai-api-key
+TAVILY_API_KEY=your-actual-tavily-api-key
+
+# 그 외 설정은 기본값 사용
+```
+
+> **중요**: `.env` 파일은 `.gitignore`에 포함되어 있어 GitHub에 업로드되지 않습니다. 각자 자신의 API 키를 안전하게 사용할 수 있습니다.
+
+### 4. 벡터 스토어 생성하기
+
+이 저장소에는 이미 PDF 파일이 포함되어 있지만, 벡터 스토어는 OpenAI API를 통해 새로 생성해야 합니다:
+
+```bash
+python scripts/create_vector_store.py
+```
+
+이 과정은 약간의 시간이 소요될 수 있으며, OpenAI API 사용량에 따라 비용이 발생할 수 있습니다.
+
+### 5. 시스템 실행하기
+
+기본 사용 예제:
+
+```bash
+python examples/basic_usage.py
+```
+
+멀티턴 대화 예제:
+
+```bash
+python examples/multi_turn_conversation.py
+```
+
+### 6. 문제 해결
+
+- **API 키 오류**: `.env` 파일에 API 키가 올바르게 설정되었는지 확인하세요.
+- **ImportError**: 패키지가 올바르게 설치되었는지 확인하세요 (`pip install -e .`).
+- **벡터 스토어 오류**: `python scripts/create_vector_store.py`를 실행하여 벡터 스토어를 생성했는지 확인하세요.
+
 ## 설치
 
 ### 사전 요구사항
@@ -129,8 +198,10 @@ adaptive-rag-ko/
 │   ├── generators/     # 답변 생성
 │   └── workflow/       # 그래프 워크플로우
 ├── data/               # 데이터 디렉토리
-│   └── sample/         # 샘플 데이터
+│   ├── sample/         # 샘플 데이터
+│   └── pdf/            # PDF 문서
 ├── models/             # 모델 및 인덱스 저장
+│   └── sample_indices/ # 벡터 스토어
 ├── examples/           # 사용 예제
 ├── notebooks/          # 주피터 노트북
 └── scripts/            # 유틸리티 스크립트

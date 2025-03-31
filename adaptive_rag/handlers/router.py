@@ -20,13 +20,15 @@ def route_question(state: GraphState):
         print("후속 질문 감지됨, 벡터 저장소로 라우팅")
         return "vectorstore"
     
-    # 일반 질문 라우팅
-    source = question_router.invoke({"question": question})
+    # 간단한 키워드 기반 라우팅
+    # 최신 정보, 뉴스, 통계, 날짜 관련 키워드는 웹 검색으로
+    web_search_keywords = ["최신", "뉴스", "통계", "언제", "최근", "오늘", "어제", "날짜", 
+                           "2023", "2024", "현재", "요즘", "트렌드", "동향"]
     
-    if source.datasource == "web_search":
+    if any(keyword in question for keyword in web_search_keywords):
         print("웹 검색으로 라우팅됨")
         return "web_search"
-    else:  # vectorstore
+    else:
         print("벡터 저장소로 라우팅됨")
         return "vectorstore"
 

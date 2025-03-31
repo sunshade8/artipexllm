@@ -54,3 +54,6 @@ htmlcov/
 !/data/pdf/
 /models/*
 !/models/sample_indices/
+
+# Custom API key handler
+fix_api_key.py

@@ -48,8 +48,9 @@ Thumbs.db
 htmlcov/
 .pytest_cache/
 
-# 데이터 및 모델 (예외: 샘플 데이터)
+# 데이터 및 모델 (예외: 샘플 데이터, PDF 파일)
 /data/*
 !/data/sample/
+!/data/pdf/
 /models/*
 !/models/sample_indices/

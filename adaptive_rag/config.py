@@ -15,6 +15,8 @@ VECTOR_STORE_PATH = os.environ.get("ADAPTIVE_RAG_VECTOR_STORE_PATH",
 
 # 샘플 데이터 경로
 SAMPLE_DATA_DIR = os.path.join(DATA_DIR, "sample")
+# PDF 데이터 경로
+PDF_DIR = os.path.join(DATA_DIR, "pdf")
 
 # API 키 설정 (환경 변수에서 읽기)
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
@@ -36,6 +38,10 @@ def check_environment():
         warnings.append("⚠️ TAVILY_API_KEY 환경 변수가 설정되지 않았습니다.")
     
     if not os.path.exists(SAMPLE_DATA_DIR):
+# PDF 데이터 경로
+PDF_DIR = os.path.join(DATA_DIR, "pdf")
         warnings.append(f"⚠️ 샘플 데이터 디렉토리가 존재하지 않습니다: {SAMPLE_DATA_DIR}")
+# PDF 데이터 경로
+PDF_DIR = os.path.join(DATA_DIR, "pdf")
     
     return warnings

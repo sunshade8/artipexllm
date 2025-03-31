@@ -1,5 +1,5 @@
 from ..models import GraphState
-from ..config import VECTOR_STORE_PATH, SAMPLE_DATA_DIR, DATA_DIR
+from ..config import VECTOR_STORE_PATH, SAMPLE_DATA_DIR, DATA_DIR, PDF_DIR
 import os
 
 from ..models import GraphState

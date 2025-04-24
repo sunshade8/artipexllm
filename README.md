@@ -1,7 +1,7 @@
 # ArtiTech: Adaptive Artwork Recommendation System
 
 
-## 📊 LanGraph Visualization
+## 📊 LangGraph Visualization
 ![LangGraph Visualization](Artitech_LangGraph.png)
 
 ## Overview

@@ -1,5 +1,8 @@
 # ArtiTech: 적응형 미술 작품 추천 시스템
 
+## 📊 LanGraph Visualization
+![LangGraph Visualization](Artitech_LangGraph.png)
+
 ## 개요
 
 이 프로젝트는 미술 작품 추천기와 결합된 적응형 검색 증강 생성(RAG) 시스템을 구현합니다. 주요 목표는 공감적인 대화를 나누고, 사용자의 감정을 이해하며, 정서적 웰빙을 지원하기 위해 관련 미술 작품이나 창의적인 활동을 제안할 수 있는 AI 어시스턴트를 만드는 것입니다.

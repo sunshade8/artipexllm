@@ -1,6 +1,6 @@
 # ArtiTech: 적응형 미술 작품 추천 시스템
 
-## 📊 LanGraph Visualization
+## 📊 LangGraph Visualization
 ![LangGraph Visualization](Artitech_LangGraph.png)
 
 ## 개요

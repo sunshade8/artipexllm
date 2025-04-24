@@ -1,5 +1,9 @@
 # ArtiTech: Adaptive Artwork Recommendation System
 
+
+## 📊 LanGraph Visualization
+![LangGraph Visualization](Artitech_LangGraph.png)
+
 ## Overview
 
 This project implements an adaptive Retrieval-Augmented Generation (RAG) system combined with an artwork recommender. The primary goal is to create an AI assistant that can engage in empathetic conversations, understand user emotions, and suggest relevant artworks or creative activities to support emotional well-being.

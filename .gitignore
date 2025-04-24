@@ -1,0 +1,29 @@
+# Environment variables
+.env
+
+# Cache directories
+emotion_art_cache/
+src/emotion_art_cache/
+
+# Python cache/compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+*.log
+*.sqlite
+*.db
+
+data/RAG_pdf/9.Art_Projects_in_Therapy_Kids_First.pdf

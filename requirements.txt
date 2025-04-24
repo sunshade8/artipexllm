@@ -1,0 +1,175 @@
+aiobotocore @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_1cl06d5vjc/croot/aiobotocore_1714464399334/work
+aiohappyeyeballs @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_170hwh6b2i/croot/aiohappyeyeballs_1725434022310/work
+aiohttp @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_4dbk4qcpk1/croot/aiohttp_1725523997240/work
+aiohttp-retry @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_52s3r9y2r8/croot/aiohttp-retry_1725435395609/work
+aioitertools @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_c52_d9c8_f/croot/aioitertools_1675923064227/work
+aiosignal @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_75_263yv1b/croot/aiosignal_1640805316748/work
+alembic==1.13.2
+annotated-types==0.7.0
+anyio @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_380f3f2f-12e6-4075-96ca-a3f821798393j36tq59k/croots/recipe/anyio_1691494423730/work
+asttokens==2.4.1
+async-timeout @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_4a6b721b-f81d-4079-b143-647c63d22da1k01j8a87/croots/recipe/async-timeout_1698820159452/work
+atrs==0.3.2
+atten-pytorch==1.11.11
+attrs==23.2.0
+babel==2.15.0
+boto3==1.34.150
+botocore @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_9d32s77v9r/croot/botocore_1725476918172/work
+certifi==2024.7.4
+charset-normalizer==3.3.2
+click==8.1.7
+comm==0.2.2
+contourpy @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_e4400e8d-ba67-43d5-8e7a-e5051b2af388f3n_1d_2/croots/recipe/contourpy_1694199813234/work
+cycler==0.12.1
+dataclasses-json==0.6.7
+datetime==5.5
+debugpy==1.8.2
+decorator==5.1.1
+distribution==1.0.0
+dotenv==0.0.5
+exceptiongroup==1.2.2
+executing==2.0.1
+faiss-cpu==1.8.0
+fastapi==0.111.1
+filelock==3.15.4
+fonttools==4.53.1
+fqdn==1.5.1
+frozendict==2.4.4
+fsspec @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_6a9x7o477j/croot/fsspec_1725446723802/work
+greenlet==3.0.3
+h11==0.14.0
+huggingface-hub==0.24.1
+hypercorn==0.17.0
+idna==3.7
+image-similarity-measures==0.4.0
+ipykernel==6.29.5
+ipympl==0.9.4
+ipython==8.26.0
+ipywidgets==8.1.3
+isoduration==20.11.0
+jedi==0.19.1
+Jinja2==3.1.4
+jmespath==1.0.1
+jsonpatch==1.33
+jsonpointer==3.0.0
+jsonschema==4.23.0
+jsonschema-specifications==2023.12.1
+jupyter-client==8.6.2
+jupyter-core==5.7.2
+jupyterlab-pygments==0.3.0
+jupyterlab-widgets==3.0.11
+langchain==0.2.11
+langchain-community==0.2.10
+langchain-core==0.2.23
+langchain-experimental==0.0.62
+langchain-openai==0.1.17
+langchain-text-splitters==0.2.2
+langcodes==3.4.0
+langgraph==0.1.1
+langsmith==0.1.86
+lark==1.1.9
+loguru==0.7.2
+Markdown==3.6
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+marshmallow==3.21.3
+matplotlib==3.9.1
+matplotlib-inline==0.1.7
+mdurl==0.1.2
+mistune==3.0.2
+mpmath==1.3.0
+multidict==6.0.5
+multiprocess==0.70.16
+nbclient @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_556f480f-7f8b-4fbb-be05-0f5351d410833181n51y/croots/recipe/nbclient_1694800180977/work
+nbconvert @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_88128684-7823-4185-9ac6-74409428e997544l10f6/croots/recipe/nbconvert_1694800205874/work
+nbformat==5.10.4
+nested-lookup==0.2.25
+networkx @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_a4943af1-1a8a-4d97-a658-f3b5d3703c971p8u_1t1/croots/recipe/networkx_1700824447511/work
+numexpr==2.10.1
+numpy @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_099gf9a9z4/croot/numpy_and_numpy_base_1725387459248/work/dist/numpy-2.0.0-cp311-cp311-macosx_11_0_arm64.whl#sha256=cc9e551677b1be71f3787736656a3c82341a8ff5d70c54f1fca6ccf8c9f67d16
+openai==1.35.13
+opencv-python==4.10.0.84
+orjson==3.10.6
+outcome==1.3.0.post0
+overrides==7.7.0
+packaging==24.1
+pandas @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_376r9n4q6r/croot/pandas_1725433418339/work/dist/pandas-2.2.2-cp311-cp311-macosx_11_0_arm64.whl#sha256=3f14856227f7916a29a630d3ff18179155e2f73f8736926bb3bb2190265e5417
+pandocfilters==1.5.1
+parso==0.8.4
+pathos==0.3.2
+pexpect==4.9.0
+pickle5==0.0.12
+Pillow==10.4.0
+platformdirs==4.2.2
+pox==0.3.4
+ppft==1.8.0.1
+prompt-toolkit==3.0.47
+psutil==6.0.0
+pure-eval==0.2.2
+PyAudio==0.2.14
+pycodestyle @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_d51204a2-e67f-4f6f-9320-2af16c517c7891d5f25e/croots/recipe/pycodestyle_1667700101175/work
+pydantic==2.8.2
+pydantic_core==2.20.1
+pydeck==0.9.1
+pygments @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_59c4f16c-2cf4-4e2e-9e88-d43b77f7f583z88s8y2m/croots/recipe/pygments_1694680581770/work
+PyJWT==2.8.0
+pyparsing==3.1.2
+python-dateutil==2.9.0.post0
+python-dotenv==1.0.1
+python-multipart==0.0.9
+pytz==2024.1
+PyYAML==6.0.1
+pyzmq==26.0.3
+referencing==0.35.1
+regex==2024.5.15
+requests==2.32.3
+rich==13.7.1
+rfc3986-validator==0.1.1
+rpds-py==0.19.1
+safetensors==0.4.3
+schema==0.7.7
+scikit-image==0.24.0
+scikit-learn==1.5.1
+scipy @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_18e0w5a541/croot/scipy_1725440316335/work/dist/scipy-1.14.0-cp311-cp311-macosx_12_0_arm64.whl#sha256=504404ddf1875647b7074f9038ef1b231c93bda9a82358eb64005c382a03a085
+seaborn==0.13.2
+send2trash==1.8.3
+six==1.16.0
+sniffio==1.3.1
+sortedcontainers==2.4.0
+sounddevice==0.4.7
+SQLAlchemy @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_0880e4fa-cb56-4387-886a-61fa418f7a48754k2o43/croots/recipe/sqlalchemy_1691344146809/work
+stack-data==0.6.3
+starlette==0.37.2
+symengine @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_bd78f5bc-952f-4f4c-ac97-e48d17bb859c38221476/croots/recipe/symengine_1700677705395/work
+sympy==1.13.0
+tangled-up-in-unicode==0.2.0
+tavily-python==0.3.5
+tenacity==8.4.2
+termcolor==2.4.0
+terminado==0.18.1
+threadpoolctl @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_53873f7b-5a38-4608-ba9b-a2c06cf86a92p984b102/croots/recipe/threadpoolctl_1694420439504/work
+tinycss2 @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_a27f9117-1324-4946-b8d3-956a1d035ec1y0k1b94n/croots/recipe/tinycss2_1694629073984/work
+tokenizers==0.19.1
+toolz==0.12.1
+torch @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_3bti2j95r6/croot/pytorch_1719943464242/work/dist/torch-2.4.0-cp311-none-macosx_11_0_arm64.whl#sha256=49a1a28906a0a1283b477a934e61999a6ef0908fbfcd0ce6853d9251d397733c
+tornado==6.4.1
+tqdm==4.66.4
+traitlets==5.14.3
+transformers==4.42.4
+trio==0.26.0
+trio-websocket==0.11.1
+typing-inspect==0.9.0
+typing_extensions==4.12.2
+tzdata==2024.1
+urllib3==2.2.2
+uri-template==1.3.0
+vector_quantize_pytorch==1.14.16
+vscode-context==0.0.4
+wcwidth==0.2.13
+webcolors==24.6.0
+WebOb==1.8.8
+websocket-client @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_e388df5d-2d2c-40c1-a063-0f14690e35291k4w0q2m/croots/recipe/websocket-client_1694620810101/work
+widgetsnbextension==4.0.11
+wsproto==1.2.0
+yarl==1.9.4
+zope.interface==6.4.post2 

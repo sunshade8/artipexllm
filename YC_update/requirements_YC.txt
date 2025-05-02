@@ -1,0 +1,13 @@
+transformers
+accelerate
+sentence-transformers
+intel-extension-for-pytorch
+faiss-cpu
+httpx[socks]
+python-dotenv
+langchain_openai
+langchain_community
+langchain_teddynote
+huggingface_hub
+torch==2.7.0 --index-url https://download.pytorch.org/whl/cpu
+intel-extension-for-pytorch==2.7.0

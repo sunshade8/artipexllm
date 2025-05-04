@@ -9,6 +9,11 @@ from typing import Dict
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from src.routing import create_question_router
+
+# --- Instantiate LLM and Router (can be done once outside the function if desired) ---
+llm_router = ChatOpenAI(temperature=0, model="gpt-3.5-turbo")
+question_router = create_question_router(llm_router)
 
 def multi_turn_router(state: Dict) -> str:
     """
@@ -43,16 +48,19 @@ def multi_turn_router(state: Dict) -> str:
     print("No pending suggestion. Classifying user intent.")
     if not question:
         print("No question found in state, defaulting to standard route.")
-        # Fallback to original RAG routing if no question
+        # --- Use the new question_router ---
         try:
-            from __main__ import route_question # Avoid top-level import issues
-            return route_question(state)
-        except ImportError:
-             print("Warning: route_question not found. Defaulting to 'web_search'.")
+            # Pass the state which contains the question
+            routing_result = question_router.invoke(state)
+            standard_route = routing_result.datasource
+            print(f"Routing empty question to standard path: {standard_route}")
+            return standard_route
+        except Exception as e:
+             print(f"Error routing empty question: {e}. Defaulting to 'web_search'.")
              return "web_search" # Or a safer default
 
-    # Initialize LLM
-    llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo")
+    # Initialize LLM (only for intent classification now)
+    llm_intent = ChatOpenAI(temperature=0, model="gpt-3.5-turbo")
 
     # Define prompt for intent classification
     prompt = ChatPromptTemplate.from_messages([
@@ -66,8 +74,8 @@ def multi_turn_router(state: Dict) -> str:
         ("human", f"User message: {question}\n\nClassification:")
     ])
 
-    # Create and invoke the chain
-    intent_chain = prompt | llm | StrOutputParser()
+    # Create and invoke the intent chain
+    intent_chain = prompt | llm_intent | StrOutputParser()
 
     try:
         intent = intent_chain.invoke({}).strip().lower()
@@ -78,34 +86,41 @@ def multi_turn_router(state: Dict) -> str:
             print("Routing to direct art request handler.")
             return "art_request"
         elif intent == "standard_query":
-            # Defer to the original RAG/web search router
+            # --- Use the new question_router ---
             try:
-                from __main__ import route_question # Avoid top-level import issues
-                standard_route = route_question(state)
-                print(f"Routing to standard path: {standard_route}")
+                # Pass the state which contains the question
+                routing_result = question_router.invoke(state)
+                standard_route = routing_result.datasource
+                print(f"Routing standard query to: {standard_route}")
                 return standard_route
-            except ImportError:
-                 print("Warning: route_question not found. Defaulting to 'web_search'.")
+            except Exception as e:
+                 print(f"Error routing standard query: {e}. Defaulting to 'web_search'.")
                  return "web_search" # Or a safer default
 
         else:
             print(f"Warning: LLM returned unexpected intent '{intent}'. Defaulting to standard route.")
-            # Fallback to original RAG routing on unexpected LLM output
+            # --- Use the new question_router ---
             try:
-                from __main__ import route_question # Avoid top-level import issues
-                return route_question(state)
-            except ImportError:
-                 print("Warning: route_question not found. Defaulting to 'web_search'.")
+                # Pass the state which contains the question
+                routing_result = question_router.invoke(state)
+                standard_route = routing_result.datasource
+                print(f"Routing unexpected intent to standard path: {standard_route}")
+                return standard_route
+            except Exception as e:
+                 print(f"Error routing unexpected intent: {e}. Defaulting to 'web_search'.")
                  return "web_search" # Or a safer default
 
     except Exception as e:
         print(f"Error during LLM intent classification: {e}. Defaulting to standard route.")
-        # Fallback to original RAG routing on error
+        # --- Use the new question_router ---
         try:
-            from __main__ import route_question # Avoid top-level import issues
-            return route_question(state)
-        except ImportError:
-            print("Warning: route_question not found. Defaulting to 'web_search'.")
+            # Pass the state which contains the question
+            routing_result = question_router.invoke(state)
+            standard_route = routing_result.datasource
+            print(f"Routing after classification error to standard path: {standard_route}")
+            return standard_route
+        except Exception as inner_e:
+            print(f"Error routing after classification error: {inner_e}. Defaulting to 'web_search'.")
             return "web_search" # Or a safer default
 
 # Remove or comment out the old is_follow_up_art_request function if it's no longer needed

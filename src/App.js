@@ -12,7 +12,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import UndoIcon from '@mui/icons-material/Undo';
 
 // *** IMPORTANT: Replace with your deployed Render backend URL ***
-const API_ENDPOINT = "https://artipexllm-backend-abcd.onrender.com/chat"; // Replace this placeholder
+const API_ENDPOINT = "https://artipexllm-backend.onrender.com"; // Replace this placeholder
 
 function App() {
   const [messages, setMessages] = useState([]);

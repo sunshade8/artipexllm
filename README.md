@@ -1,3 +1,34 @@
+# IPEXLLM Chat Application
+
+A React-based chat application with drawing capabilities that uses OpenAI's GPT-4 Vision API.
+
+## Setup
+
+1. Clone this repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Create a `.env` file in the root directory with your OpenAI API key:
+   ```
+   REACT_APP_OPENAI_API_KEY=your_api_key_here
+   ```
+4. Start the development server:
+   ```
+   npm start
+   ```
+
+## Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from create-react-app
+
+## Security Note
+
+Never store API keys directly in your source code. Always use environment variables as shown above.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -11,8 +11,8 @@ import SaveIcon from '@mui/icons-material/Save';
 import DeleteIcon from '@mui/icons-material/Delete';
 import UndoIcon from '@mui/icons-material/Undo';
 
-// *** IMPORTANT: Replace with your deployed Render backend URL ***
-const API_ENDPOINT = "https://artipexllm-backend.onrender.com"; // Replace this placeholder
+// Backend API Endpoint
+const API_ENDPOINT = "https://artipexllm-backend.onrender.com/chat"; // Your live Render backend URL
 
 function App() {
   const [messages, setMessages] = useState([]);

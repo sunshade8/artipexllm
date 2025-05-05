@@ -1,0 +1,14 @@
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-openai>=0.0.5
+openai>=1.10.0
+python-dotenv>=1.0.0
+faiss-cpu>=1.7.4
+pillow>=9.0.0
+numpy>=1.22.0
+matplotlib>=3.5.0
+pandas>=1.4.0
+
+# Web server dependencies
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0 
